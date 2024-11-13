@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;400;500&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body {
+    width: 100%;
+    background-color: #C1E1C1;
+}
+
+
+nav{
+    width: 100%;
+    height: 5vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+   
+}
+
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 16px;
+}
+
+.logo{
+    color: black;
+    font-size: 0.5rem;
+    font-weight: bold;
+}
+
+.logo span{
+    color: black;
+    text-shadow: 0 0 10px ;
+}
+
+.hamburg,
+.cancel{
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: white;
+    display: none;
+    font-size: 0.8rem;
+}
+
+.nav-container .links{
+    display: flex;
+}
+
+.nav-container .links a{
+    position: relative;
+    font-size: 0.5rem;
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 200;
+    transition: 0.3s linear;
+}
+
+.nav-container .links a::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color:#3cda3c;
+    transition: 0.2s linear;
+}
+
+.nav-container .links a:hover::before{
+    width: 100%;
+}
+
+.nav-container .links a:hover{
+    color:rgb#C1E1C1;
+}
+
+.dropdown{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(4px) brightness(40%);
+    box-shadow:  0 0 20px black;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a:hover{
+    background-color: #26df26;
+}
+
+section{
+    width: 100%;
+    height: 90vh;
+}
+.main-container {
+    width: 90%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.main-container .image {
+    width: 100px;
+    height: 90px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgb(1, 27, 10);
+    margin-right: 20px; /* Adds spacing between image and content */
+}
+
+.main-container .image img {
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+}
+
+.main-container .image:hover {
+    animation: animate 1.5s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.content {
+    color: white;
+    width: 40%;
+    min-height: 100px;
+    margin: 10px 0;
+}
+
+.content h1 {
+    font-size: clamp(0.5rem, 0.1rem + 3vw, 1.3rem);
+    margin: 10px 0;
+}
+
+.content h1 span {
+    color: white;
+    text-shadow: 0 0 20px magenta;
+}
+
+.content .typewriter {
+    font-size: clamp(0.8rem, 1rem + 4vw, 1.5rem);
+    font-weight: 550;
+}
+
+.content .typewriter-text {
+    color: white;
+    text-shadow: 0 0 20px magenta;
+}
+
+.content p {
+    font-size: clamp(0.3rem, 0.2rem + 4vw, 0.7rem);
+    margin: 10px 0;
+    margin-left: 5px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 40px; 
+    width: 90%; 
+    max-width: 850px; 
+    margin: 20px auto; 
+    border-radius: 8px;
+    background-color: #29ec29;
+    padding: 10px;
+    border: 2px solid black; 
+    border-radius: 8px;
+    color: black; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    justify-items: center;
+    justify-content: center;
+    margin: 0;
+    color:black; 
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin-top: 20px;
+}
+
+.social-links i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 0.2rem solid black;
+    border-radius: 50%;
+    color: black;
+    margin: 5px 5px;
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+}
+
+.social-links i:hover {
+    scale: 1.3;
+    color: white;
+    background-color: #30fd30;
+    filter: drop-shadow black;
+}
+
+.content button {
+    width: 40%;
+    height: 7vh;
+    margin: 20px auto;
+    background-color:#1bf31b;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 100%;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.2s linear;
+}
+
+.content button:hover {
+    scale: 1.2;
+    color: white;
+    border: 2px solidblack;
+    background-color: transparent;
+    font-weight: 100;
+    box-shadow: 0 0 40px rgb(94, 255, 0);
+}
+
+/* Responsive styles */
+@media (max-width: 884px) {
+    nav .logo {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 5rem;
+    }
+    
+    .main-container {
+        display: flex;
+        flex-direction: center;
+    }
+
+    .nav-container .links {
+        display: none;
+    }
+
+    .hamburg,
+    .cancel {
+        display: block;
+    }
+
+    .main-container .content {
+        width: 80%;
+    }
+    
+    .social-links i {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.5rem;
+    }
+    
+    .main-container .image {
+        z-index: -1;
+        width: 50%;
+        height: 60%;
+    }
+}
+
+@media (max-width: 440px) {
+    .main-container .image {
+        justify-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 50%;
+        margin-bottom: 5px;
+    }
+    
+    .main-container .content {
+        width: 80%;
+    }
+    
+    .main-container button {
+        margin-top: 15px;
+    }
+}
+
+
+/* Section Styling */
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 90%;
+    max-width: 850px;
+    margin: 20px auto;
+    border-radius: 8px;
+    background-color:#2bf52b; 
+    border: 2px solid black; 
+    color: black; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Section Heading */
+#projects .heading-text {
+    font-size: 1rem;
+    text-align: center;
+    color: black; 
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+/* Container for Projects */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Individual Project Item */
+.project-item {
+    background-color: #333;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    max-width: 200px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-item:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.5);
+}
+
+
+.project-item .images-container {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.project-item img {
+    width: 100%;
+    max-height: 100px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    object-fit: cover; /* Maintains aspect ratio */
+}
+
+.project-item img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Make the 3rd image span the full width */
+.project-item .images-container img:nth-child(3) {
+    grid-column: span 2;
+}
+
+/* Project Content Section */
+.project-item .content {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Project Title */
+.project-item h3 {
+    font-size: 1.5rem;
+    color:white; 
+    margin: 8px 0 6px;
+    font-weight: bold;
+}
+
+/* Project Description */
+.project-item p {
+    font-size: 0.8rem;
+    color:white;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-item {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #projects .heading-text {
+        font-size: 0.8rem;
+    }
+    .project-item h3 {
+        font-size: 1rem;
+    }
+    .project-item p {
+        font-size: 0.75rem;
+    }
+}
+
+#education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 40px; 
+    width: 90%; 
+    max-width: 850px; 
+    margin: 20px auto; 
+    border-radius: 8px;
+    background-color: #0ee70e; 
+    padding: 10px;
+    border: 2px solid black; 
+    border-radius: 8px;
+    color: black; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+
+/* Container styling */
+#education .container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Heading styling */
+#education .heading-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: black; 
+    margin-bottom: 20px;
+}
+
+/* Education container styling */
+#education .education-container {
+    list-style-type: none; 
+    padding: 0;
+    margin-top: 40px;
+}
+
+/* Individual list item styling */
+#education .education-container li {
+    font-size: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid white; 
+}
+
+/* Last list item no border */
+#education .education-container li:last-child {
+    border-bottom: none;
+}
+
+/* Responsive font adjustment */
+@media (max-width: 600px) {
+    #education .heading-text {
+        font-size: 20px;
+    }
+    
+    #education .education-container li {
+        font-size: 16px;
+    }
+}
+/* Styling for the main section */
+#about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 40px; 
+    width: 90%; 
+    max-width: 850px; 
+    margin: 20px auto; 
+  
+    border-radius: 8px;
+    background-color: #1ce41c;
+    padding: 10px;
+    border: 2px solid black; 
+    border-radius: 8px;
+    color: black; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Container styling */
+#about-me .width-50 {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Heading styling */
+#about-me .heading-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: black; /* Light greenish tone */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+#about-me p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: black; /* Slightly lighter white */
+    text-align: justify;
+    margin-top: 10px;
+}
+
+/* Responsive font adjustment */
+@media (max-width: 600px) {
+    #about-me .heading-text {
+        font-size: 25px;
+    }
+    
+    #about-me p {
+        font-size: 16px;
+    }
+}
