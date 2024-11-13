@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Dimailig Portfolio</title>
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <div class="links">
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                <a href="#home">Home</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                <a href="#about-me">About</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"
+            ><a href="#education">Education</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                <a href="#projects">Project</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                <a href="#contact-info">Contact</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#about-me">About</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Project</a>
+                <a href="#contact-info">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <div id="home" class="main-container">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="pic4.jfif" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Jessica</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+                    I'm a <span class="typewriter-text"></span><label for="">|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100"> with a passion for continuous learning through both academic study and hands-on projects.</p>
+            
+                    
+            </div>
+        </div>
+        </div>
+
+        <section id="about-me" class="main-section bg-white" data-aos="fade-up" data-aos-duration="1500">
+            <div class="width-50 mt-20" data-aos="fade-up" data-aos-duration="1500">
+                <h2 class="heading-text">About Me</h2>
+               <p>Hello I'm Jessica,
+                I'm a Computer Science Student learning and molding my skills, knowledge and intellectual activities regards to technology 
+                and effectiveness in exploring my personality and encourage others that they can did too.</p>
+            </div>
+        </section>
+        
+
+        <section id="education" class="main-section bg-black" data-aos="fade-up" data-aos-duration="1500">
+            <div class="container">
+                <h2 class="heading-text">EDUCATIONAL BACKGROUND :</h2>
+                <div class="education-container">
+                   
+                       <li> STO NIÑO I ELEMENTARY SCHOOL -- Graduated at STO. NIÑO I ELEMENTARY SCHOOL TAGKAWAYAN, QUEZON </li>
+                       
+                       
+                        <li>SENIOR HIGH SCHOOL -- Graduated at SAN ISIDRO NATIONAL HIGH SCHOOL TAGKAWAYAN, QUEZON</li>
+                       
+                       
+                     <li>TESDA PHARMACY ASSISTANT NC III PASSER at TESDA SACRED HEART COLLEGE - LUCENA CITY QUEZON</li>
+                    </div>
+        </div>
+</section>
+<section id="projects" class="main-section bg-dark" data-aos="fade-up" data-aos-duration="1500">
+    <div class="container">
+        <h2 class="heading-text">My Projects</h2>
+        <div class="projects-container" data-aos="fade-up" data-aos-duration="1500">
+            <div class="project-item">
+                <div class="images-container">
+                    <img src="pic1.jfif" alt="Project 1">
+                    <img src="pic2.jfif" alt="Project 2">
+        
+                </div>
+                <div class="content">
+                    <h3>WEBIT</h3>
+                    <p>Projects Description...
+                         The WEBIT is an IT Company website created by our group of developers...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        
+<section id= "contact-info" class="contact-info">
+    <div class="width-50 mt-20">
+        <h2 class="heading-text">Contact Me</h2>
+        <table cellspacing="5" cellpadding="5">
+               
+    <div class="social-links">
+        <a href="https://www.facebook.com/jessica.dimailig.5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/2612jesscah/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:jessicadimailig2@gmail.com" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+639691587246" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><i class="fa-solid fa-phone"></i></a>
+    </table>
+    </div>
+    
+</div>
+
+</section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="js.js"></script>
+
+    
+</body>
+</html>
