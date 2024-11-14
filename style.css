@@ -12,7 +12,7 @@
 
 body {
     width: 100%;
-    background-color: #C1E1C1;
+    background-color: #2f422f;
 }
 
 
@@ -87,7 +87,7 @@ nav{
 }
 
 .nav-container .links a:hover{
-    color:rgb#C1E1C1;
+    color:rgb#2f422f;
 }
 
 .dropdown{
@@ -197,7 +197,7 @@ section{
     max-width: 850px; 
     margin: 20px auto; 
     border-radius: 8px;
-    background-color: #29ec29;
+    background-color: #C1E1C1;
     padding: 10px;
     border: 2px solid black; 
     border-radius: 8px;
@@ -247,7 +247,7 @@ section{
     width: 40%;
     height: 7vh;
     margin: 20px auto;
-    background-color:#1bf31b;
+    background-color:#C1E1C1;
     color: white;
     border: none;
     outline: none;
@@ -336,7 +336,7 @@ section{
     max-width: 850px;
     margin: 20px auto;
     border-radius: 8px;
-    background-color:#2bf52b; 
+    background-color:#C1E1C1; 
     border: 2px solid black; 
     color: black; 
     margin-bottom: 20px;
@@ -365,7 +365,7 @@ section{
 
 /* Individual Project Item */
 .project-item {
-    background-color: #333;
+    background-color: #C1E1C1;
     border: 2px solid black;
     border-radius: 8px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
@@ -393,7 +393,7 @@ section{
 
 .project-item img {
     width: 100%;
-    max-height: 100px;
+    max-height: 50px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
@@ -438,7 +438,7 @@ section{
         align-items: center;
     }
     .project-item {
-        max-width: 90%;
+        max-width: 80%;
     }
 }
 
@@ -464,7 +464,7 @@ section{
     max-width: 850px; 
     margin: 20px auto; 
     border-radius: 8px;
-    background-color: #0ee70e; 
+    background-color: #C1E1C1; 
     padding: 10px;
     border: 2px solid black; 
     border-radius: 8px;
@@ -530,7 +530,7 @@ section{
     margin: 20px auto; 
   
     border-radius: 8px;
-    background-color: #1ce41c;
+    background-color: #C1E1C1;
     padding: 10px;
     border: 2px solid black; 
     border-radius: 8px;
