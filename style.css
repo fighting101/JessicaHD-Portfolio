@@ -388,11 +388,11 @@ section{
     gap: 5px;
     grid-template-columns: repeat(2, 1fr); /* 2 images per row */
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .project-item img {
-    width: 100%;
+    width: 50%;
     max-height: 50px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -411,22 +411,22 @@ section{
 
 /* Project Content Section */
 .project-item .content {
-    text-align: center;
-    margin-top: 10px;
+    text-align: left-alignment;
+    margin-top: 5px;
 }
 
 /* Project Title */
 .project-item h3 {
     font-size: 1.5rem;
-    color:white; 
-    margin: 8px 0 6px;
+    color:black; 
+    margin: 10px 0 5px;
     font-weight: bold;
 }
 
 /* Project Description */
 .project-item p {
     font-size: 0.8rem;
-    color:white;
+    color:black;
     margin: 0;
     line-height: 1.4;
 }
